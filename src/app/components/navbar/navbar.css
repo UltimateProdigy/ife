@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 70px;
+    padding-top: 20px;
+}
+.brandname {
+  width: 206px;
+  color: #000;
+  font-family: Syne;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+  margin-top: 5px;
+}
+.linklist {
+    display: flex;
+    list-style: none;
+}
+.links {
+    padding-right: 60px;
+}
+svg{
+    padding-right: 20px;
+    margin-top: 10px;
+}
