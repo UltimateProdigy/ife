@@ -10,8 +10,24 @@
   width: 235px;
   height: 43px;
   border-radius: 21.5px;
-  background: #ca0200;
+  background: #ca5100;
   box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: white;
   font-family: Syne;
+}
+.purchase:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card {
+  width: 300px;
+  height: 500px;
+  text-align: center;
+}
+.trending-div {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  padding-left: 3vw;
+  padding-bottom: 80px;
 }

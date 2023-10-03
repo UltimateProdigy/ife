@@ -3,17 +3,17 @@ import Image from 'next/image';
 
 type trendingProps = {
     shoe: any,
-    name:string,
-    description: string
+    name: string,
+    description: string,
+    width: number
 }
 
-const Trendingcard = ({shoe, name, description}: trendingProps) => {
+const Trendingcard = ({shoe, name, description, width}: trendingProps) => {
   return (
-    <div>
-        <p>Trending in 2023</p>
-        <Image src={shoe} alt='trendingleather' />
-        <p>{name}</p>
-        <p>{description}</p>
+    <div className='card'>
+        <Image style={{borderRadius: "10px"}} src={shoe} width={width} alt='trendingleather' />
+        <p className='trendingname'>{name}</p>
+        <p className='trendingname'>{description}</p>
         <button className='purchase'>Purchase Now</button>
     </div>
   )
