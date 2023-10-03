@@ -1,0 +1,17 @@
+.trending {
+  color: #000;
+  font-family: Syne;
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 170px;
+}
+.purchase {
+  width: 235px;
+  height: 43px;
+  border-radius: 21.5px;
+  background: #ca0200;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-family: Syne;
+}

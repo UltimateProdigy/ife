@@ -19,11 +19,20 @@
 .linklist {
     display: flex;
     list-style: none;
+    height: 0;
 }
 .links {
     padding-right: 60px;
+    font-family: Syne;
+    
+}
+.links:hover {
+    color: #ca5100;
+    cursor: pointer;
+    transition: 0.3s;
 }
 svg{
     padding-right: 20px;
     margin-top: 10px;
+    cursor: pointer;
 }

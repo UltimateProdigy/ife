@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+
+.hero {
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.intro {
+  color: #000;
+  font-family: Syne;
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 115%; /* 67.85px */
+  margin-bottom: 20px;
+}
+.yeardiv {
+  width: 218px;
+  height: 74px;
+  border: 2px dashed #ca5100;
+}
+.year {
+  color: #ca5100;
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 6px;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.aboutbiz {
+  color: #000;
+  font-family: Syne;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 115%; /* 23px */
+  width: 473px;
+}
+.shopbtn {
+  width: 283px;
+  height: 69px;
+  border-radius: 34.5px;
+  background: #ca5100;
+  box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: Syne;
+  font-size: 34px;
+  font-weight: 600;
+}
+.shopbtn:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.shoe-image-div {
+  width: 641px;
+  height: 1024px;
+  transform: rotate(90deg);
+  border-radius: 320.5px;
+  background: linear-gradient(
+    180deg,
+    #ca5100 46.19%,
+    rgba(255, 177, 153, 0) 122.31%
+  );
+}
+.shoeimg {
+    margin-top: -50px;
+    padding-right: 4vw;
+}
+

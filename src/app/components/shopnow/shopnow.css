@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap");
+.birkens {
+  border-radius: 22px;
+  margin-top: 100px;
+}
+.level-up {
+  color: #000;
+  font-family: Syne;
+  font-size: 100px;
+  font-weight: 700;
+  width: 618px;
+  margin-bottom: 10px;
+  position: relative;
+  right: 200px;
+}
+.level-up-intro {
+  width: 513px;
+  color: rgba(0, 0, 0, 0.71);
+  font-family: Syne;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 20px;
+}
+.shopnow-div {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+}
