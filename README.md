@@ -1,1 +1,1 @@
-A Shoe business Landing Page, built with TypeScript and NextJs.
+A Leather shoes and materials business Landing Page, built with TypeScript and NextJs.
