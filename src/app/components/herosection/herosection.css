@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 
 .hero {
   margin-left: 70px;
@@ -25,7 +24,7 @@
   font-weight: 600;
   margin-top: 6px;
   text-align: center;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: Syne
 }
 .aboutbiz {
   color: #000;

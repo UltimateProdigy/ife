@@ -27,7 +27,26 @@
 }
 .trending-div {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding-left: 3vw;
-  padding-bottom: 80px;
+  padding-bottom: 200px;
+}
+.trendingsvg {
+  margin: 0;
+  padding: 2px;
+}
+.trendingdes {
+  color: #000;
+  font-family: Syne;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 0px;
+}
+.trendingname {
+  color: #000;
+  font-family: Syne;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
 }

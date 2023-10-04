@@ -1,0 +1,52 @@
+.subscribe {
+  color: #000;
+  font-family: Syne;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.percentage {
+  color: #ca0200;
+  font-family: Syne;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 0;
+}
+.subscribe-div {
+  width: 1156px;
+  height: 345px;
+  border-radius: 33px;
+  background: #a3b7f5;
+  box-shadow: 4px 7px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  padding: 40px;
+}
+input {
+  width: 602px;
+  height: 40px;
+  border-radius: 9px;
+  background: #fff;
+  outline: none;
+  font-family: Syne;
+}
+
+input::placeholder {
+  font-family: Syne;
+  padding-left: 40px;
+}
+.sub {
+  width: 172px;
+  height: 41.936px;
+  flex-shrink: 0;
+  border-radius: 34.5px;
+  background: #ca0200;
+  box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  margin-top: 30px;
+  font-family: Syne;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
