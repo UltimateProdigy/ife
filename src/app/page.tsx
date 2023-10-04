@@ -1,17 +1,23 @@
-import Navbar from "./components/navbar/navbar";
-import Hersosection from "./components/herosection/hersosection";
-import Shopnow from "./components/shopnow/shopnow";
-import Trending from "./components/trending/trending";
-import Subscribe from "./components/subscribe/subscribe";
+import Image from "next/image";
+import Background from "./_assets/images/homebackground.jpg";
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <Hersosection />
-      <Shopnow />
-      <Trending />
-      <Subscribe />
+      <Image
+        alt="background"
+        src={Background}
+        placeholder="blur"
+        quality={100}
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover",
+        }}
+      />
+      <div>
+        <h1 className="welcome">Welcome to ÌFÉ leathers</h1>
+      </div>
     </div>
   );
 };

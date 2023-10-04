@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap");
+
+.footer-brandname {
+  font-family: Syne;
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+}
+.footer-link-header {
+  color: #fff;
+  font-family: Syne;
+  font-size: 22px;
+  font-weight: 600;
+}
+footer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px;
+    margin-top: 100px;
+}
+.footer-links li {
+    color: #FFF;
+    font-family: Syne;
+    list-style-type: none;
+    padding: 5px;
+}
