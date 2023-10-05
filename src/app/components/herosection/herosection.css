@@ -16,10 +16,10 @@
 .yeardiv {
   width: 218px;
   height: 74px;
-  border: 2px dashed #ca5100;
+  border: 2px dashed black;
 }
 .year {
-  color: #ca5100;
+  color: black;
   font-size: 50px;
   font-weight: 600;
   margin-top: 6px;
@@ -38,7 +38,7 @@
   width: 283px;
   height: 69px;
   border-radius: 34.5px;
-  background: #ca5100;
+  background: black;
   box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.25);
   color: #fff;
   font-family: Syne;
@@ -49,17 +49,6 @@
   transform: scale(0.9);
   transition: 0.5s;
   cursor: pointer;
-}
-.shoe-image-div {
-  width: 641px;
-  height: 1024px;
-  transform: rotate(90deg);
-  border-radius: 320.5px;
-  background: linear-gradient(
-    180deg,
-    #ca5100 46.19%,
-    rgba(255, 177, 153, 0) 122.31%
-  );
 }
 .shoeimg {
     margin-top: -50px;

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Background from "./_assets/images/homebackground.jpg";
+import Link from 'next/link'
 
 const Home = () => {
   return (
@@ -16,7 +17,13 @@ const Home = () => {
         }}
       />
       <div>
-        <h1 className="welcome">Welcome to ÌFÉ leathers</h1>
+        <h1 className="welcome">ÌFÉ Leather Creatives</h1>
+        <div className="signinup">
+          <Link href="/signin">
+            <button className="signin">Sign In</button>
+          </Link>
+          <button className="signup">Sign Up</button>
+        </div>
       </div>
     </div>
   );

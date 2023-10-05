@@ -2,12 +2,49 @@
 
 .welcome {
     font-family: Syne;
-    font-size: 50px;
+    font-size: 80px;
     font-weight: bolder;
     text-align: center;
     color: white;
     position: relative;
+    margin-top: 200px;
 }
 body {
     margin: 0;
+}
+
+.signin {
+    width: 100px;
+    height: 40px;
+    color: #FFF;
+    background-color: black;
+    position: relative;
+    margin-right: 50px;
+    font-family: Syne;
+    border-radius: 5px;
+    
+}
+.signup {
+    width: 100px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    position: relative;
+    font-family: Syne;
+    border-radius: 5px;
+    
+}
+.signinup {
+    margin: auto;
+    width: 250px;
+}
+.signin:hover {
+    transition: 0.5s;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.signup:hover {
+    transition: 0.5s;
+    transform: scale(1.3);
+    cursor: pointer;
 }
