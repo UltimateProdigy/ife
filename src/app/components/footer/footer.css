@@ -24,4 +24,6 @@ footer {
     font-family: Syne;
     list-style-type: none;
     padding: 5px;
+    cursor: pointer;
+    width: 100px;
 }

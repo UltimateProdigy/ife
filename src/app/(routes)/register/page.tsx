@@ -104,5 +104,4 @@ const Register: React.FC = () => {
   );
 };
 
-// Export the component as the default export
 export default Register;

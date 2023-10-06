@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { Input } from 'antd'; // Import Ant Design Input component
+import { Input } from "antd";
 import "./signin.css";
 import Link from "next/link";
-import { FormEvent, useState } from "react"; // Import useState instead of useRef for form fields
+import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const Signin: React.FC = () => {
@@ -11,18 +11,17 @@ const Signin: React.FC = () => {
   const [loginPassword, setLoginPassword] = useState<string>("");
   const router = useRouter();
 
-  const username = localStorage.getItem("Username") || ""; // Retrieve username from localStorage
-  const password = localStorage.getItem("Password") || ""; // Retrieve password from localStorage
+  const storedUsername = localStorage.getItem("Username");
+  const storedPassword = localStorage.getItem("Password");
 
   const handleLogin = (e: FormEvent) => {
     e.preventDefault();
-    
-    // Check if entered username and password match the stored values
-    if (username === loginUsername && password === loginPassword) {
+
+    if (storedUsername === loginUsername && storedPassword === loginPassword) {
       alert("Signed In Successfully");
       router.push("/dashboard");
     } else {
-      alert("Invalid Credentials, Please Try Again!!!");
+      alert("Incorrect Username or Password");
     }
   };
 
@@ -31,6 +30,7 @@ const Signin: React.FC = () => {
       <h3 className="login-intro">Please Log In</h3>
       <form className="signin-form" onSubmit={handleLogin}>
         <Input
+          className="input"
           type="text"
           placeholder="Username"
           value={loginUsername}
@@ -38,6 +38,7 @@ const Signin: React.FC = () => {
           required
         />
         <Input.Password
+          className="input"
           placeholder="Password"
           value={loginPassword}
           onChange={(e) => setLoginPassword(e.target.value)}
