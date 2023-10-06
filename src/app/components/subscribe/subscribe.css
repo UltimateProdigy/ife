@@ -23,7 +23,7 @@
   margin: auto;
   padding: 40px;
 }
-input {
+.subscribe-input {
   width: 602px;
   height: 40px;
   border-radius: 9px;
@@ -32,7 +32,7 @@ input {
   font-family: Syne;
 }
 
-input::placeholder {
+.subscribe-input::placeholder {
   font-family: Syne;
   padding-left: 40px;
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Background from "./_assets/images/homebackground.jpg";
-import Link from 'next/link'
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -22,7 +22,9 @@ const Home = () => {
           <Link href="/signin">
             <button className="signin">Sign In</button>
           </Link>
-          <button className="signup">Sign Up</button>
+          <Link href="/register">
+            <button className="signup">Sign Up</button>
+          </Link>
         </div>
       </div>
     </div>
