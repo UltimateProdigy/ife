@@ -33,6 +33,18 @@
 }
 svg{
     padding-right: 20px;
-    margin-top: 10px;
+    margin-bottom: -10px;
     cursor: pointer;
+}
+.logout-btn {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-family: Syne;
+}
+.acc-div {
+    margin-top: 10px;
 }
