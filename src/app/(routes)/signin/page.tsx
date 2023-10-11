@@ -1,27 +1,29 @@
-"use client";
+'use client';
 
-import { Input } from "antd";
-import "./signin.css";
-import Link from "next/link";
-import { FormEvent, useState } from "react";
-import { useRouter } from "next/navigation";
+import { Input } from 'antd';
+import './signin.css';
+import Link from 'next/link';
+import { FormEvent, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import toast from 'react-hot-toast';
 
 const Signin: React.FC = () => {
-  const [loginUsername, setLoginUsername] = useState<string>("");
-  const [loginPassword, setLoginPassword] = useState<string>("");
+  const [loginUsername, setLoginUsername] = useState<string>('');
+  const [loginPassword, setLoginPassword] = useState<string>('');
   const router = useRouter();
+  
 
-  const storedUsername = localStorage.getItem("Username");
-  const storedPassword = localStorage.getItem("Password");
+  const storedUsername = localStorage.getItem('Username');
+  const storedPassword = localStorage.getItem('Password');
 
   const handleLogin = (e: FormEvent) => {
     e.preventDefault();
 
     if (storedUsername === loginUsername && storedPassword === loginPassword) {
-      alert("Signed In Successfully");
-      router.push("/dashboard");
+      toast.success('Login Successful');
+      router.push('/dashboard');
     } else {
-      alert("Incorrect Username or Password");
+      toast.error('Incorrect Username or Password');
     }
   };
 

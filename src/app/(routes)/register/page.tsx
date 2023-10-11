@@ -3,6 +3,7 @@
 import "./register.css";
 import React, { useRef, FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 const Register: React.FC = () => {
   const firstNameRef = useRef<HTMLInputElement>(null);
@@ -31,12 +32,12 @@ const Register: React.FC = () => {
       !password ||
       !retypePassword
     ) {
-      alert("All fields are required");
+      toast.error("All fields are required");
       return;
     }
 
     if (password !== retypePassword) {
-      alert("Passwords do not match");
+      toast.error("Passwords do not match");
       return;
     }
 
@@ -46,7 +47,7 @@ const Register: React.FC = () => {
     localStorage.setItem("Username", username);
     localStorage.setItem("Password", password);
 
-    alert("Account Created Successfully");
+    toast.success("Account Created Successfully");
     router.push("/signin");
   };
 
@@ -59,42 +60,36 @@ const Register: React.FC = () => {
           ref={firstNameRef}
           type="text"
           placeholder="First Name"
-          required
         />
         <input
           className="register-input"
           ref={otherNameRef}
           type="text"
           placeholder="Other Name"
-          required
         />
         <input
           className="register-input"
           ref={emailRef}
           type="email"
           placeholder="E-mail"
-          required
         />
         <input
           className="register-input"
           ref={usernameRef}
           type="text"
           placeholder="Username"
-          required
         />
         <input
           className="register-input"
           ref={passwordRef}
           type="password"
           placeholder="Password"
-          required
         />
         <input
           className="register-input"
           ref={retypePasswordRef}
           type="password"
           placeholder="Retype-Password"
-          required
         />
         <button className="register-btn" type="submit">
           Register
